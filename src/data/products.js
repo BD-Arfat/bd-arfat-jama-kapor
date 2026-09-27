@@ -1,21 +1,29 @@
 const products = [
+  // =====================================================
+  // PRODUCT 1
+  // =====================================================
   {
     id: 1,
-    name: "Premium Oversized T-Shirt",
+    name: "Spider jersey",
     category: "T-Shirts",
-    price: 850,
-    oldPrice: 1100,
-    discount: 23,
+
+    price: 720,
+    oldPrice: 800,
+    discount: 10,
+
     rating: 4.8,
     reviews: 124,
-    stock: 18,
+    stock: 50,
 
     image:
-      "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=1000&q=85",
+      "https://i.ibb.co.com/9HrhK7jK/Whats-App-Image-2026-09-27-at-8-58-38-PM.jpg",
 
     images: [
-      "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=1000&q=85",
-      "https://images.unsplash.com/photo-1503341504253-dff4815485f1?auto=format&fit=crop&w=1000&q=85",
+      "https://i.ibb.co.com/9HrhK7jK/Whats-App-Image-2026-09-27-at-8-58-38-PM.jpg",
+      "https://i.ibb.co.com/wZVRpWRt/Whats-App-Image-2026-09-27-at-8-58-41-PM.jpg",
+      "https://i.ibb.co.com/N66YdBqx/Whats-App-Image-2026-09-27-at-8-58-43-PM.jpg",
+      "https://i.ibb.co.com/LDgWyP8p/Whats-App-Image-2026-09-27-at-8-58-45-PM.jpg",
+      "https://i.ibb.co.com/qMTFRnd7/Whats-App-Image-2026-09-27-at-8-58-49-PM.jpg",
     ],
 
     description:
@@ -26,7 +34,6 @@ const products = [
     colors: ["Black", "White", "Beige"],
 
     material: "Premium Cotton",
-
     fit: "Oversized Fit",
 
     delivery: "2-5 working days",
@@ -34,176 +41,213 @@ const products = [
     sku: "BDT-001",
   },
 
-  {
-    id: 2,
-    name: "Classic Casual Shirt",
-    category: "Shirts",
-    price: 1250,
-    oldPrice: 1500,
-    discount: 17,
-    rating: 4.7,
-    reviews: 89,
-    stock: 12,
+  // =====================================================
+  // PRODUCT 2
+  // =====================================================
+  // {
+  //   id: 2,
+  //   name: "Classic Cotton T-Shirt",
+  //   category: "T-Shirts",
 
-    image:
-      "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=1000&q=85",
+  //   price: 750,
+  //   oldPrice: 950,
+  //   discount: 21,
 
-    images: [
-      "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=1000&q=85",
-      "https://images.unsplash.com/photo-1596755389378-c31d21fd1273?auto=format&fit=crop&w=1000&q=85",
-    ],
+  //   rating: 4.7,
+  //   reviews: 98,
+  //   stock: 45,
 
-    description:
-      "A stylish casual shirt made for modern everyday fashion. Comfortable, versatile and easy to pair with jeans or trousers.",
+  //   image:
+  //     "https://images.unsplash.com/photo-1503341504253-dff4815485f1?auto=format&fit=crop&w=1000&q=85",
 
-    sizes: ["M", "L", "XL", "XXL"],
+  //   images: [
+  //     "https://images.unsplash.com/photo-1503341504253-dff4815485f1?auto=format&fit=crop&w=1000&q=85",
+  //     "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=1000&q=85",
+  //     "https://images.unsplash.com/photo-1562157873-818bc0726f68?auto=format&fit=crop&w=1000&q=85",
+  //     "https://images.unsplash.com/photo-1583743814966-8936f37f4678?auto=format&fit=crop&w=1000&q=85",
+  //   ],
 
-    colors: ["Brown", "Black"],
+  //   description:
+  //     "A comfortable classic cotton t-shirt made for everyday wear. Soft fabric, clean design and a comfortable fit make it perfect for casual styling.",
 
-    material: "Cotton Blend",
+  //   sizes: ["S", "M", "L", "XL", "XXL"],
 
-    fit: "Regular Fit",
+  //   colors: ["Black", "White", "Navy Blue"],
 
-    delivery: "2-5 working days",
+  //   material: "100% Cotton",
+  //   fit: "Regular Fit",
 
-    sku: "BDS-002",
-  },
+  //   delivery: "2-5 working days",
 
-  {
-    id: 3,
-    name: "Premium Football Jersey",
-    category: "Jerseys",
-    price: 950,
-    oldPrice: 1200,
-    discount: 21,
-    rating: 4.9,
-    reviews: 156,
-    stock: 25,
+  //   sku: "BDT-002",
+  // },
 
-    image:
-      "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=1000&q=85",
+  // =====================================================
+  // PRODUCT 3
+  // =====================================================
+  // {
+  //   id: 3,
+  //   name: "Premium Black T-Shirt",
+  //   category: "T-Shirts",
 
-    images: [
-      "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=1000&q=85",
-    ],
+  //   price: 900,
+  //   oldPrice: 1200,
+  //   discount: 25,
 
-    description:
-      "Premium football jersey with a comfortable athletic fit. Perfect for sports, training and casual everyday wear.",
+  //   rating: 4.9,
+  //   reviews: 156,
+  //   stock: 35,
 
-    sizes: ["S", "M", "L", "XL"],
+  //   image:
+  //     "https://images.unsplash.com/photo-1562157873-818bc0726f68?auto=format&fit=crop&w=1000&q=85",
 
-    colors: ["Red", "Black", "White"],
+  //   images: [
+  //     "https://images.unsplash.com/photo-1562157873-818bc0726f68?auto=format&fit=crop&w=1000&q=85",
+  //     "https://images.unsplash.com/photo-1583743814966-8936f37f4678?auto=format&fit=crop&w=1000&q=85",
+  //     "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=1000&q=85",
+  //     "https://images.unsplash.com/photo-1503341504253-dff4815485f1?auto=format&fit=crop&w=1000&q=85",
+  //   ],
 
-    material: "Sports Polyester",
+  //   description:
+  //     "A stylish premium black t-shirt with a clean modern look. Designed with comfortable fabric for everyday use and casual occasions.",
 
-    fit: "Athletic Fit",
+  //   sizes: ["S", "M", "L", "XL", "XXL"],
 
-    delivery: "2-5 working days",
+  //   colors: ["Black", "Charcoal", "White"],
 
-    sku: "BDJ-003",
-  },
+  //   material: "Premium Cotton",
 
-  {
-    id: 4,
-    name: "Relaxed Fit Denim Pants",
-    category: "Pants",
-    price: 1450,
-    oldPrice: 1750,
-    discount: 17,
-    rating: 4.6,
-    reviews: 72,
-    stock: 10,
+  //   fit: "Regular Fit",
 
-    image:
-      "https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=1000&q=85",
+  //   delivery: "2-5 working days",
 
-    images: [
-      "https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=1000&q=85",
-    ],
+  //   sku: "BDT-003",
+  // },
 
-    description:
-      "Comfortable relaxed-fit denim pants designed for everyday use. A versatile choice for casual and modern outfits.",
+  // =====================================================
+  // PRODUCT 4
+  // =====================================================
+  // {
+  //   id: 4,
+  //   name: "Oversized Streetwear T-Shirt",
+  //   category: "T-Shirts",
 
-    sizes: ["30", "32", "34", "36", "38"],
+  //   price: 950,
+  //   oldPrice: 1250,
+  //   discount: 24,
 
-    colors: ["Blue", "Black"],
+  //   rating: 4.8,
+  //   reviews: 87,
+  //   stock: 30,
 
-    material: "Denim",
+  //   image:
+  //     "https://images.unsplash.com/photo-1583743814966-8936f37f4678?auto=format&fit=crop&w=1000&q=85",
 
-    fit: "Relaxed Fit",
+  //   images: [
+  //     "https://images.unsplash.com/photo-1583743814966-8936f37f4678?auto=format&fit=crop&w=1000&q=85",
+  //     "https://images.unsplash.com/photo-1562157873-818bc0726f68?auto=format&fit=crop&w=1000&q=85",
+  //     "https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=1000&q=85",
+  //     "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=1000&q=85",
+  //   ],
 
-    delivery: "2-5 working days",
+  //   description:
+  //     "A modern oversized streetwear t-shirt designed for a relaxed and stylish look. Perfect for casual outfits, hangouts and everyday wear.",
 
-    sku: "BDP-004",
-  },
+  //   sizes: ["M", "L", "XL", "XXL"],
 
-  {
-    id: 5,
-    name: "Essential White T-Shirt",
-    category: "T-Shirts",
-    price: 750,
-    oldPrice: null,
-    discount: null,
-    rating: 4.8,
-    reviews: 98,
-    stock: 30,
+  //   colors: ["Black", "White", "Beige"],
 
-    image:
-      "https://images.unsplash.com/photo-1583743814966-8936f37f4678?auto=format&fit=crop&w=1000&q=85",
+  //   material: "Heavy Cotton",
 
-    images: [
-      "https://images.unsplash.com/photo-1583743814966-8936f37f4678?auto=format&fit=crop&w=1000&q=85",
-    ],
+  //   fit: "Oversized Fit",
 
-    description:
-      "A clean and comfortable white t-shirt that works perfectly with almost any everyday outfit.",
+  //   delivery: "2-5 working days",
 
-    sizes: ["S", "M", "L", "XL", "XXL"],
+  //   sku: "BDT-004",
+  // },
 
-    colors: ["White"],
+  // =====================================================
+  // PRODUCT 5
+  // =====================================================
+  // {
+  //   id: 5,
+  //   name: "Casual Everyday T-Shirt",
+  //   category: "T-Shirts",
 
-    material: "100% Cotton",
+  //   price: 700,
+  //   oldPrice: 900,
+  //   discount: 22,
 
-    fit: "Regular Fit",
+  //   rating: 4.6,
+  //   reviews: 76,
+  //   stock: 60,
 
-    delivery: "2-5 working days",
+  //   image:
+  //     "https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=1000&q=85",
 
-    sku: "BDT-005",
-  },
+  //   images: [
+  //     "https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=1000&q=85",
+  //     "https://images.unsplash.com/photo-1503341504253-dff4815485f1?auto=format&fit=crop&w=1000&q=85",
+  //     "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=1000&q=85",
+  //   ],
 
-  {
-    id: 6,
-    name: "Premium Cotton Shirt",
-    category: "Shirts",
-    price: 1350,
-    oldPrice: 1600,
-    discount: 16,
-    rating: 4.7,
-    reviews: 64,
-    stock: 15,
+  //   description:
+  //     "A simple and comfortable everyday t-shirt with a clean design. Easy to pair with jeans, trousers or shorts for a casual look.",
 
-    image:
-      "https://images.unsplash.com/photo-1596755389378-c31d21fd1273?auto=format&fit=crop&w=1000&q=85",
+  //   sizes: ["S", "M", "L", "XL"],
 
-    images: [
-      "https://images.unsplash.com/photo-1596755389378-c31d21fd1273?auto=format&fit=crop&w=1000&q=85",
-    ],
+  //   colors: ["White", "Black", "Grey"],
 
-    description:
-      "Premium cotton shirt with a clean modern appearance and comfortable feel.",
+  //   material: "Cotton Blend",
 
-    sizes: ["M", "L", "XL", "XXL"],
+  //   fit: "Regular Fit",
 
-    colors: ["Black", "Gray"],
+  //   delivery: "2-5 working days",
 
-    material: "Premium Cotton",
+  //   sku: "BDT-005",
+  // },
 
-    fit: "Regular Fit",
+  // =====================================================
+  // PRODUCT 6
+  // =====================================================
+  // {
+  //   id: 6,
+  //   name: "Premium Relaxed Fit T-Shirt",
+  //   category: "T-Shirts",
 
-    delivery: "2-5 working days",
+  //   price: 800,
+  //   oldPrice: 1050,
+  //   discount: 24,
 
-    sku: "BDS-006",
-  },
+  //   rating: 4.7,
+  //   reviews: 112,
+  //   stock: 40,
+
+  //   image:
+  //     "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=1000&q=85",
+
+  //   images: [
+  //     "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=1000&q=85",
+  //     "https://images.unsplash.com/photo-1562157873-818bc0726f68?auto=format&fit=crop&w=1000&q=85",
+  //     "https://images.unsplash.com/photo-1583743814966-8936f37f4678?auto=format&fit=crop&w=1000&q=85",
+  //     "https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=1000&q=85",
+  //   ],
+
+  //   description:
+  //     "A premium relaxed-fit t-shirt made with soft and breathable fabric. Designed for comfort while maintaining a clean and modern appearance.",
+
+  //   sizes: ["S", "M", "L", "XL", "XXL"],
+
+  //   colors: ["Black", "White", "Olive"],
+
+  //   material: "Premium Cotton",
+
+  //   fit: "Relaxed Fit",
+
+  //   delivery: "2-5 working days",
+
+  //   sku: "BDT-006",
+  // },
 ];
 
 export default products;

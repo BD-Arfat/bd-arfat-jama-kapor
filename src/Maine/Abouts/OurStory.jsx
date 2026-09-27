@@ -27,7 +27,7 @@ const OurStory = () => {
             {/* Description */}
             <div className="mt-6 space-y-4 text-base leading-7 text-gray-600 sm:text-lg">
               <p>
-                BDARFATJAMA started with a simple idea — to bring together
+                ZYRQON FITS started with a simple idea — to bring together
                 modern style, everyday comfort, and quality clothing in one
                 place.
               </p>

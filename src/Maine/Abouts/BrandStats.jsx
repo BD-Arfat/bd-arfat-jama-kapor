@@ -48,7 +48,7 @@ const BrandStats = () => {
             <span className="h-2 w-2 animate-pulse rounded-full bg-[#EE627D]"></span>
 
             <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#BE2229] sm:text-sm">
-              BDARFATJAMA In Numbers
+              ZYRQON FITS In Numbers
             </p>
           </div>
 

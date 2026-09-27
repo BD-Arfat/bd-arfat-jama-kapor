@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import bdarfat from "../../assets/bdarfat.png";
+import bdarfat from "../../assets/bdarfat.jpeg";
 
 import {
     FiMenu,
@@ -149,62 +149,7 @@ Thank you.
                             </a>
                         ))}
 
-                        {/* ================= CATEGORIES ================= */}
-                        <div className="group relative">
-                            <button
-                                onClick={() =>
-                                    setCategoryOpen(!categoryOpen)
-                                }
-                                className="flex items-center gap-1.5 text-[15px] font-semibold text-gray-800 transition duration-300 hover:text-[#BE2229]"
-                            >
-                                Categories
-
-                                <FiChevronDown
-                                    className={`transition-transform duration-300 ${
-                                        categoryOpen
-                                            ? "rotate-180"
-                                            : ""
-                                    }`}
-                                />
-                            </button>
-
-                            {/* Dropdown */}
-                            <div
-                                className={`absolute left-1/2 top-[38px] w-52 -translate-x-1/2 rounded-2xl border border-[#E1CFC4] bg-white p-2 shadow-xl transition-all duration-300 ${
-                                    categoryOpen
-                                        ? "visible translate-y-0 opacity-100"
-                                        : "invisible -translate-y-2 opacity-0"
-                                }`}
-                            >
-                                <a
-                                    href="/category/tshirts"
-                                    className="block rounded-xl px-4 py-3 text-sm font-medium text-gray-700 transition hover:bg-[#FCE8E8] hover:text-[#BE2229]"
-                                >
-                                    👕 T-Shirts
-                                </a>
-
-                                <a
-                                    href="/category/shirts"
-                                    className="block rounded-xl px-4 py-3 text-sm font-medium text-gray-700 transition hover:bg-[#FCE8E8] hover:text-[#BE2229]"
-                                >
-                                    👔 Shirts
-                                </a>
-
-                                <a
-                                    href="/category/jerseys"
-                                    className="block rounded-xl px-4 py-3 text-sm font-medium text-gray-700 transition hover:bg-[#FCE8E8] hover:text-[#BE2229]"
-                                >
-                                    ⚽ Jerseys
-                                </a>
-
-                                <a
-                                    href="/category/pants"
-                                    className="block rounded-xl px-4 py-3 text-sm font-medium text-gray-700 transition hover:bg-[#FCE8E8] hover:text-[#BE2229]"
-                                >
-                                    👖 Pants
-                                </a>
-                            </div>
-                        </div>
+                        
 
                         {navLinks.slice(2).map((link) => (
                             <a
@@ -267,15 +212,14 @@ Thank you.
                         </button>
 
                         {/* Login */}
-                        <a
-                            href="/login"
+                        <button
                             className="ml-2 rounded-full border-2 border-[#BE2229]
               px-5 py-2.5 text-sm font-bold text-[#BE2229]
               transition duration-300
               hover:bg-[#BE2229] hover:text-white"
                         >
                             Login
-                        </a>
+                        </button>
                     </div>
 
                     {/* ================= MOBILE RIGHT ================= */}
@@ -351,66 +295,6 @@ Thank you.
                                 Shop
                             </a>
 
-                            {/* Mobile Categories */}
-                            <div>
-                                <button
-                                    onClick={() =>
-                                        setCategoryOpen(
-                                            !categoryOpen
-                                        )
-                                    }
-                                    className="flex w-full items-center justify-between rounded-xl
-                  px-4 py-3.5 font-semibold text-gray-800
-                  transition hover:bg-[#FCE8E8] hover:text-[#BE2229]"
-                                >
-                                    Categories
-
-                                    <FiChevronDown
-                                        className={`transition-transform duration-300 ${
-                                            categoryOpen
-                                                ? "rotate-180"
-                                                : ""
-                                        }`}
-                                    />
-                                </button>
-
-                                <div
-                                    className={`ml-4 overflow-hidden transition-all duration-300 ${
-                                        categoryOpen
-                                            ? "max-h-60 opacity-100"
-                                            : "max-h-0 opacity-0"
-                                    }`}
-                                >
-                                    <a
-                                        href="/category/tshirts"
-                                        className="block border-l-2 border-[#EE627D] px-4 py-2.5 text-sm text-gray-600 hover:text-[#BE2229]"
-                                    >
-                                        T-Shirts
-                                    </a>
-
-                                    <a
-                                        href="/category/shirts"
-                                        className="block border-l-2 border-[#EE627D] px-4 py-2.5 text-sm text-gray-600 hover:text-[#BE2229]"
-                                    >
-                                        Shirts
-                                    </a>
-
-                                    <a
-                                        href="/category/jerseys"
-                                        className="block border-l-2 border-[#EE627D] px-4 py-2.5 text-sm text-gray-600 hover:text-[#BE2229]"
-                                    >
-                                        Jerseys
-                                    </a>
-
-                                    <a
-                                        href="/category/pants"
-                                        className="block border-l-2 border-[#EE627D] px-4 py-2.5 text-sm text-gray-600 hover:text-[#BE2229]"
-                                    >
-                                        Pants
-                                    </a>
-                                </div>
-                            </div>
-
                             <a
                                 href="/about"
                                 onClick={() => setIsOpen(false)}
@@ -441,8 +325,7 @@ Thank you.
                                 Search
                             </button>
 
-                            <a
-                                href="/login"
+                            <button
                                 className="flex items-center justify-center gap-2
                 rounded-xl bg-[#BE2229] py-3
                 font-semibold text-white
@@ -450,7 +333,7 @@ Thank you.
                             >
                                 <FiUser size={18} />
                                 Login
-                            </a>
+                            </button>
                         </div>
                     </div>
                 </div>

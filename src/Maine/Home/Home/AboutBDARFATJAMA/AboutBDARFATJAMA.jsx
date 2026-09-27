@@ -24,7 +24,7 @@ const AboutBDARFATJAMA = () => {
             {/* Brand Badge */}
             <div className="absolute bottom-4 left-4 rounded-xl bg-white/95 px-4 py-3 shadow-lg backdrop-blur-sm sm:bottom-6 sm:left-6">
               <p className="text-[9px] font-bold uppercase tracking-[0.2em] text-[#BE2229]">
-                BDARFATJAMA
+                ZYRQON FITS
               </p>
               <p className="mt-1 text-xs font-semibold text-[#171717]">
                 Fashion • Comfort • Style
@@ -57,7 +57,7 @@ const AboutBDARFATJAMA = () => {
 
             {/* Description */}
             <p className="mt-5 text-sm leading-7 text-gray-500 sm:text-base">
-              BDARFATJAMA is all about bringing together modern style,
+              ZYRQON FITS is all about bringing together modern style,
               everyday comfort and quality fashion in one place.
             </p>
 

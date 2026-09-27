@@ -10,14 +10,14 @@ import AboutBDARFATJAMA from './AboutBDARFATJAMA/AboutBDARFATJAMA';
 
 const Home = () => {
     return (
-        <div>
+        <div >
             <Banner></Banner>
             <AboutBDARFATJAMA></AboutBDARFATJAMA>
-            <ShopByCategory></ShopByCategory>
-            <FeaturedProducts></FeaturedProducts>
-            <NewArrivals></NewArrivals>
-            <CollectionBanner></CollectionBanner>
+            {/* <ShopByCategory></ShopByCategory> */}
             <WhyChooseUs></WhyChooseUs>
+            {/* <FeaturedProducts></FeaturedProducts> */}
+            {/* <NewArrivals></NewArrivals> */}
+            <CollectionBanner></CollectionBanner>
             <CustomerReviews></CustomerReviews>
         </div>
     );

@@ -69,7 +69,7 @@ const WhyChooseUs = () => {
           <h2 className="text-3xl font-extrabold tracking-tight text-[#171717] sm:text-4xl lg:text-5xl">
             Why Choose{" "}
             <span className="text-[#BE2229]">
-              BDARFATJAMA?
+              ZYRQON FITS?
             </span>
           </h2>
 

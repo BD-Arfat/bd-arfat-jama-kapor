@@ -136,7 +136,7 @@ const CustomerReviews = () => {
 
           <p className="mt-4 text-sm leading-7 text-gray-500 sm:text-base">
             Real feedback from customers who experienced
-            BDARFATJAMA products and service.
+            ZYRQON FITS products and service.
           </p>
 
           {/* Rating */}

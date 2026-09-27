@@ -13,7 +13,7 @@ const AboutHero = () => {
             <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-[#E1CFC4] bg-white px-4 py-2">
               <span className="h-2 w-2 rounded-full bg-[#EE627D]"></span>
               <span className="text-xs font-semibold uppercase tracking-[0.18em] text-[#BE2229] sm:text-sm">
-                About BDARFATJAMA
+                About ZYRQON FITS
               </span>
             </div>
 
@@ -25,7 +25,7 @@ const AboutHero = () => {
 
             {/* Description */}
             <p className="mt-6 max-w-xl text-base leading-7 text-gray-600 sm:text-lg sm:leading-8">
-              Welcome to BDARFATJAMA — where everyday fashion meets comfort
+              Welcome to ZYRQON FITS — where everyday fashion meets comfort
               and confidence. We believe great style should feel as good as it
               looks.
             </p>
@@ -71,7 +71,7 @@ const AboutHero = () => {
                 {/* Floating Brand Card */}
                 <div className="absolute bottom-5 left-5 rounded-2xl border border-white/30 bg-white/90 px-5 py-4 shadow-xl backdrop-blur-md sm:bottom-7 sm:left-7">
                   <p className="text-xs font-semibold uppercase tracking-widest text-[#BE2229]">
-                    BDARFATJAMA
+                    ZYRQON FITS
                   </p>
                   <p className="mt-1 text-sm font-bold text-[#171717]">
                     Fashion • Comfort • Confidence

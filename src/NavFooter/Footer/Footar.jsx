@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../assets/bdarfat.png';
+import logo from '../../assets/bdarfat.jpeg';
 import {
   FiFacebook,
   FiInstagram,
@@ -38,7 +38,7 @@ const Footar = () => {
                         </a>
 
                         <p className="mt-5 max-w-sm text-sm leading-7 text-gray-400">
-                            Discover your perfect style with BDARFATJAMA.
+                            Discover your perfect style with ZYRQON FITS.
                             Quality clothing, modern designs, and everyday comfort
                             made for your lifestyle.
                         </p>
@@ -305,7 +305,7 @@ const Footar = () => {
                                         href="mailto:info@bdarfatjama.com"
                                         className="mt-1 block truncate text-sm text-gray-400 transition hover:text-white"
                                     >
-                                        info@bdarfatjama.com
+                                        info@Zyrqon-fits.com
                                     </a>
                                 </div>
 
@@ -370,7 +370,7 @@ const Footar = () => {
                         <p className="text-sm text-gray-500">
                             © {new Date().getFullYear()}{" "}
                             <span className="font-semibold text-gray-300">
-                                BDARFATJAMA
+                                ZYRQON FITS
                             </span>
                             . All rights reserved.
                         </p>

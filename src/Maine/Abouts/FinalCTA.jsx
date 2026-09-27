@@ -20,7 +20,7 @@ const FinalCTA = () => {
             {/* Small Label */}
             <div className="mb-5 inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.18em] text-white backdrop-blur-sm">
               <FiShoppingBag size={15} />
-              <span>BDARFATJAMA</span>
+              <span>ZYRQON FITS</span>
             </div>
 
             {/* Heading */}

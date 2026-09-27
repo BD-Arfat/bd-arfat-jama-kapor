@@ -12,7 +12,7 @@ const Abouts = () => {
         <div>
             <AboutHero></AboutHero>
             <OurStory></OurStory>
-            <OurCategories></OurCategories>
+            {/* <OurCategories></OurCategories> */}
             <WhatWeBelieve></WhatWeBelieve>
             <BrandStats></BrandStats>
             <WhatMakesUsDifferent></WhatMakesUsDifferent>
