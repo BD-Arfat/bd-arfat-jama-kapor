@@ -697,7 +697,7 @@ Thank you.
             <details className="group border border-gray-200 bg-[#FFF9F5]">
               <summary className="flex cursor-pointer list-none items-center justify-between gap-5 p-5 font-bold sm:p-6">
                 <span>
-                  How can I contact BDARFATJAMA?
+                  How can I contact ZYRQON FITS?
                 </span>
 
                 <FiChevronDown
@@ -732,7 +732,7 @@ Thank you.
               </p>
 
               <h2 className="mt-3 max-w-2xl text-3xl font-black uppercase leading-tight sm:text-5xl">
-                Follow BDARFATJAMA
+                Follow ZYRQON FITS
                 <span className="text-[#EE627D]"> Online.</span>
               </h2>
 

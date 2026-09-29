@@ -17,9 +17,7 @@ const PaymentNotice = () => {
           </h4>
 
           <p className="mt-1 text-sm leading-6 text-gray-600">
-            Delivery charge must be paid in advance.
-            Product price can be paid after receiving
-            the product.
+            ডেলিভারি চার্জ অগ্রিম পরিশোধ করতে হবে। পণ্য হাতে পাওয়ার পর পণ্যের মূল্য পরিশোধ করা যাবে।
           </p>
         </div>
       </div>

@@ -2,10 +2,11 @@ const products = [
   // =====================================================
   // PRODUCT 1
   // =====================================================
+
   {
     id: 1,
-    name: "Spider jersey",
-    category: "T-Shirts",
+    name: "Spider Oversized Jersey",
+    category: "jersey",
 
     price: 720,
     oldPrice: 800,
@@ -27,19 +28,33 @@ const products = [
     ],
 
     description:
-      "A premium oversized t-shirt designed for everyday comfort and effortless style. Made with soft and breathable fabric, perfect for casual outings and daily wear.",
+      "Introducing our Spider Oversized Jersey, made for those who love a relaxed and stylish look. Crafted from soft and breathable fabric, this jersey offers all-day comfort and is suitable for casual wear, hangouts, and everyday use. The oversized fit gives you a modern streetwear-inspired appearance while keeping you comfortable throughout the day.",
 
     sizes: ["S", "M", "L", "XL", "XXL"],
 
     colors: ["Black", "White", "Beige"],
 
-    material: "Premium Cotton",
+    material: "Premium Cotton Blend",
     fit: "Oversized Fit",
+
+    features: [
+      "Soft and breathable fabric",
+      "Comfortable oversized fit",
+      "Suitable for everyday wear",
+      "Modern and stylish design",
+      "Easy to wash and maintain",
+    ],
 
     delivery: "2-5 working days",
 
-    sku: "BDT-001",
+    sku: "SPJ-001",
+
+    careInstructions:
+      "Machine wash with similar colors. Do not use bleach. Avoid high-temperature ironing.",
+
+    availability: "In Stock",
   },
+
 
   // =====================================================
   // PRODUCT 2
