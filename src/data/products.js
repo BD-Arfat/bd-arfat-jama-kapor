@@ -44,43 +44,43 @@ const products = [
   // =====================================================
   // PRODUCT 2
   // =====================================================
-  // {
-  //   id: 2,
-  //   name: "Classic Cotton T-Shirt",
-  //   category: "T-Shirts",
+  {
+    id: 2,
+    name: "Classic Cotton T-Shirt",
+    category: "T-Shirts",
 
-  //   price: 750,
-  //   oldPrice: 950,
-  //   discount: 21,
+    price: 750,
+    oldPrice: 950,
+    discount: 21,
 
-  //   rating: 4.7,
-  //   reviews: 98,
-  //   stock: 45,
+    rating: 4.7,
+    reviews: 98,
+    stock: 0,
 
-  //   image:
-  //     "https://images.unsplash.com/photo-1503341504253-dff4815485f1?auto=format&fit=crop&w=1000&q=85",
+    image:
+      "https://images.unsplash.com/photo-1503341504253-dff4815485f1?auto=format&fit=crop&w=1000&q=85",
 
-  //   images: [
-  //     "https://images.unsplash.com/photo-1503341504253-dff4815485f1?auto=format&fit=crop&w=1000&q=85",
-  //     "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=1000&q=85",
-  //     "https://images.unsplash.com/photo-1562157873-818bc0726f68?auto=format&fit=crop&w=1000&q=85",
-  //     "https://images.unsplash.com/photo-1583743814966-8936f37f4678?auto=format&fit=crop&w=1000&q=85",
-  //   ],
+    images: [
+      "https://images.unsplash.com/photo-1503341504253-dff4815485f1?auto=format&fit=crop&w=1000&q=85",
+      "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=1000&q=85",
+      "https://images.unsplash.com/photo-1562157873-818bc0726f68?auto=format&fit=crop&w=1000&q=85",
+      "https://images.unsplash.com/photo-1583743814966-8936f37f4678?auto=format&fit=crop&w=1000&q=85",
+    ],
 
-  //   description:
-  //     "A comfortable classic cotton t-shirt made for everyday wear. Soft fabric, clean design and a comfortable fit make it perfect for casual styling.",
+    description:
+      "A comfortable classic cotton t-shirt made for everyday wear. Soft fabric, clean design and a comfortable fit make it perfect for casual styling.",
 
-  //   sizes: ["S", "M", "L", "XL", "XXL"],
+    sizes: ["S", "M", "L", "XL", "XXL"],
 
-  //   colors: ["Black", "White", "Navy Blue"],
+    colors: ["Black", "White", "Navy Blue"],
 
-  //   material: "100% Cotton",
-  //   fit: "Regular Fit",
+    material: "100% Cotton",
+    fit: "Regular Fit",
 
-  //   delivery: "2-5 working days",
+    delivery: "2-5 working days",
 
-  //   sku: "BDT-002",
-  // },
+    sku: "BDT-002",
+  },
 
   // =====================================================
   // PRODUCT 3
