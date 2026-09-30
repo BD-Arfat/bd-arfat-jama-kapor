@@ -48,6 +48,18 @@ const PriceSummary = ({
             </span>
           </div>
         </div>
+        {/* ================= BANGLA NOTICE ================= */}
+      <div className="mt-5 rounded-xl border border-[#BE2229]/10 bg-[#BE2229]/5 px-4 py-3">
+
+        <p className="text-xs leading-5 text-gray-600">
+          <span className="font-bold text-[#BE2229]">
+            নোট:
+          </span>{" "}
+          অর্ডার নিশ্চিত করার পর আমাদের পক্ষ থেকে আপনার সাথে
+          যোগাযোগ করা হবে।
+        </p>
+
+      </div>
 
       </div>
     </div>

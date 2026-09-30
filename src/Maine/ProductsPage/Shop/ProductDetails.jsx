@@ -271,11 +271,11 @@ Thank you.
               setSelectedSize={setSelectedSize}
             />
 
-            <ProductColor
+            {/* <ProductColor
               product={product}
               selectedColor={selectedColor}
               setSelectedColor={setSelectedColor}
-            />
+            /> */}
 
             <ProductQuantity
               quantity={quantity}

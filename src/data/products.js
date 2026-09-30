@@ -1,5 +1,9 @@
 const products = [
   // =====================================================
+  // "T-Shirts",
+  //   "Shirts",
+  //   "Jersey",
+  //   "Pants"
   // PRODUCT 1
   // =====================================================
 
@@ -59,85 +63,114 @@ const products = [
   // =====================================================
   // PRODUCT 2
   // =====================================================
+  
   {
     id: 2,
-    name: "Classic Cotton T-Shirt",
-    category: "T-Shirts",
+    name: "Spider Oversized Jersey",
+    category: "jersey",
 
-    price: 750,
-    oldPrice: 950,
-    discount: 21,
+    price: 600,
+    oldPrice: 800,
+    discount: 25,
 
-    rating: 4.7,
-    reviews: 98,
-    stock: 0,
+    rating: 4.8,
+    reviews: 124,
+    stock: 30,
 
     image:
-      "https://images.unsplash.com/photo-1503341504253-dff4815485f1?auto=format&fit=crop&w=1000&q=85",
+      "https://www.image2url.com/r2/default/images/1790792465219-30e1384e-3b32-4323-89ba-12267c70c359.jpeg",
 
     images: [
-      "https://images.unsplash.com/photo-1503341504253-dff4815485f1?auto=format&fit=crop&w=1000&q=85",
-      "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=1000&q=85",
-      "https://images.unsplash.com/photo-1562157873-818bc0726f68?auto=format&fit=crop&w=1000&q=85",
-      "https://images.unsplash.com/photo-1583743814966-8936f37f4678?auto=format&fit=crop&w=1000&q=85",
+      "https://www.image2url.com/r2/default/images/1790792465219-30e1384e-3b32-4323-89ba-12267c70c359.jpeg",
+      "https://www.image2url.com/r2/default/images/1790792465219-30e1384e-3b32-4323-89ba-12267c70c359.jpeg",
+      "https://www.image2url.com/r2/default/images/1790792465219-30e1384e-3b32-4323-89ba-12267c70c359.jpeg",
+      "https://www.image2url.com/r2/default/images/1790792465219-30e1384e-3b32-4323-89ba-12267c70c359.jpeg",
+      "https://www.image2url.com/r2/default/images/1790792465219-30e1384e-3b32-4323-89ba-12267c70c359.jpeg",
     ],
 
     description:
-      "A comfortable classic cotton t-shirt made for everyday wear. Soft fabric, clean design and a comfortable fit make it perfect for casual styling.",
+      "Introducing our Spider Oversized Jersey, made for those who love a relaxed and stylish look. Crafted from soft and breathable fabric, this jersey offers all-day comfort and is suitable for casual wear, hangouts, and everyday use. The oversized fit gives you a modern streetwear-inspired appearance while keeping you comfortable throughout the day.",
 
     sizes: ["S", "M", "L", "XL", "XXL"],
 
-    colors: ["Black", "White", "Navy Blue"],
+    colors: ["Black", "White", "Beige"],
 
-    material: "100% Cotton",
-    fit: "Regular Fit",
+    material: "Premium Cotton Blend",
+    fit: "Oversized Fit",
+
+    features: [
+      "Soft and breathable fabric",
+      "Comfortable oversized fit",
+      "Suitable for everyday wear",
+      "Modern and stylish design",
+      "Easy to wash and maintain",
+    ],
 
     delivery: "2-5 working days",
 
-    sku: "BDT-002",
+    sku: "SPJ-001",
+
+    careInstructions:
+      "Machine wash with similar colors. Do not use bleach. Avoid high-temperature ironing.",
+
+    availability: "In Stock",
   },
 
   // =====================================================
   // PRODUCT 3
   // =====================================================
-  // {
-  //   id: 3,
-  //   name: "Premium Black T-Shirt",
-  //   category: "T-Shirts",
+  {
+    id: 3,
+    name: "Spider Oversized Jersey",
+    category: "jersey",
 
-  //   price: 900,
-  //   oldPrice: 1200,
-  //   discount: 25,
+    price: 520,
+    oldPrice: 800,
+    discount: 35,
 
-  //   rating: 4.9,
-  //   reviews: 156,
-  //   stock: 35,
+    rating: 4.8,
+    reviews: 124,
+    stock: 0,
 
-  //   image:
-  //     "https://images.unsplash.com/photo-1562157873-818bc0726f68?auto=format&fit=crop&w=1000&q=85",
+    image:
+      "https://www.image2url.com/r2/default/images/1790792785806-32c22286-6ff8-45a4-b2b7-f32fec9e008f.jpeg",
 
-  //   images: [
-  //     "https://images.unsplash.com/photo-1562157873-818bc0726f68?auto=format&fit=crop&w=1000&q=85",
-  //     "https://images.unsplash.com/photo-1583743814966-8936f37f4678?auto=format&fit=crop&w=1000&q=85",
-  //     "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=1000&q=85",
-  //     "https://images.unsplash.com/photo-1503341504253-dff4815485f1?auto=format&fit=crop&w=1000&q=85",
-  //   ],
+    images: [
+      "https://www.image2url.com/r2/default/images/1790792785806-32c22286-6ff8-45a4-b2b7-f32fec9e008f.jpeg",
+      "https://www.image2url.com/r2/default/images/1790792785806-32c22286-6ff8-45a4-b2b7-f32fec9e008f.jpeg",
+      "https://www.image2url.com/r2/default/images/1790792785806-32c22286-6ff8-45a4-b2b7-f32fec9e008f.jpeg",
+      "https://www.image2url.com/r2/default/images/1790792785806-32c22286-6ff8-45a4-b2b7-f32fec9e008f.jpeg",
+      "https://www.image2url.com/r2/default/images/1790792785806-32c22286-6ff8-45a4-b2b7-f32fec9e008f.jpeg",
+    ],
 
-  //   description:
-  //     "A stylish premium black t-shirt with a clean modern look. Designed with comfortable fabric for everyday use and casual occasions.",
+    description:
+      "Introducing our Spider Oversized Jersey, made for those who love a relaxed and stylish look. Crafted from soft and breathable fabric, this jersey offers all-day comfort and is suitable for casual wear, hangouts, and everyday use. The oversized fit gives you a modern streetwear-inspired appearance while keeping you comfortable throughout the day.",
 
-  //   sizes: ["S", "M", "L", "XL", "XXL"],
+    sizes: ["S", "M", "L", "XL", "XXL"],
 
-  //   colors: ["Black", "Charcoal", "White"],
+    colors: ["Black", "White", "Beige"],
 
-  //   material: "Premium Cotton",
+    material: "Premium Cotton Blend",
+    fit: "Oversized Fit",
 
-  //   fit: "Regular Fit",
+    features: [
+      "Soft and breathable fabric",
+      "Comfortable oversized fit",
+      "Suitable for everyday wear",
+      "Modern and stylish design",
+      "Easy to wash and maintain",
+    ],
 
-  //   delivery: "2-5 working days",
+    delivery: "2-5 working days",
 
-  //   sku: "BDT-003",
-  // },
+    sku: "SPJ-001",
+
+    careInstructions:
+      "Machine wash with similar colors. Do not use bleach. Avoid high-temperature ironing.",
+
+    availability: "In Stock",
+  },
+
 
   // =====================================================
   // PRODUCT 4
