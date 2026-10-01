@@ -121,7 +121,7 @@ const ProductDetails = () => {
   // Delivery Charge
   // -----------------------------
   const deliveryCharge =
-    deliveryLocation === "inside" ? 80 : 120;
+    deliveryLocation === "inside" ? 80 : 130;
 
   // -----------------------------
   // Product Total
@@ -148,13 +148,13 @@ const ProductDetails = () => {
       return;
     }
 
-    const whatsappNumber = "8801846615162";
+    const whatsappNumber = "8801776185498";
 
     const productLink =
       `${window.location.origin}/product/${product.id}`;
 
     const message = `
-Hello BDARFATJAMA,
+Hello ZYRQON FITS,
 
 I want to order this product.
 

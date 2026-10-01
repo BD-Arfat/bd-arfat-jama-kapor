@@ -36,7 +36,7 @@ const Navbar = () => {
 
     // Delivery Charge
     const deliveryCharge =
-        deliveryLocation === "inside" ? 80 : 120;
+        deliveryLocation === "inside" ? 80 : 130;
 
     // Grand Total
     const grandTotal = cartTotal + deliveryCharge;
@@ -58,7 +58,7 @@ const Navbar = () => {
                 : "Chattogram-এর বাইরে";
 
         const message = `
-Hello BDARFATJAMA,
+Hello ZYRQON FITS,
 
 I want to order these products:
 
@@ -102,7 +102,7 @@ Please confirm my order.
 Thank you.
 `;
 
-        const whatsappNumber = "8801846615162";
+        const whatsappNumber = "8801776185498";
 
         const whatsappUrl =
             `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
@@ -656,7 +656,7 @@ Thank you.
                                                 </p>
 
                                                 <p className="mt-0.5 text-xs text-gray-500">
-                                                    Delivery Charge: ৳120
+                                                    Delivery Charge: ৳130
                                                 </p>
                                             </div>
                                         </label>
