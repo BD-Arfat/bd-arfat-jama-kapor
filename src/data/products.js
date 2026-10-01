@@ -12,9 +12,9 @@ const products = [
     name: "Spider Oversized Jersey",
     category: "jersey",
 
-    price: 720,
-    oldPrice: 800,
-    discount: 10,
+    price: 550,
+    oldPrice: 750,
+    discount: 27,
 
     rating: 4.8,
     reviews: 124,
@@ -69,9 +69,9 @@ const products = [
     name: "Spider Oversized Jersey",
     category: "jersey",
 
-    price: 600,
-    oldPrice: 800,
-    discount: 25,
+    price: 520,
+    oldPrice: 650,
+    discount: 20,
 
     rating: 4.8,
     reviews: 124,
@@ -124,13 +124,13 @@ const products = [
     name: "Spider Oversized Jersey",
     category: "jersey",
 
-    price: 520,
-    oldPrice: 800,
-    discount: 35,
+    price: 550,
+    oldPrice: 750,
+    discount: 27,
 
     rating: 4.8,
     reviews: 124,
-    stock: 0,
+    stock: 40,
 
     image:
       "https://www.image2url.com/r2/default/images/1790792785806-32c22286-6ff8-45a4-b2b7-f32fec9e008f.jpeg",
