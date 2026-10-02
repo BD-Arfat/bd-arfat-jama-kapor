@@ -1,224 +1,253 @@
+import { Link } from "react-router-dom";
 import {
   FiArrowUpRight,
-  FiStar,
+  FiHeart,
   FiShoppingBag,
+  FiStar,
+  FiTag,
 } from "react-icons/fi";
 
+import products from "../../../../data/products";
+
 const ShopByCategory = () => {
-  const categories = [
-    {
-      id: 1,
-      name: "T-Shirts",
-      subtitle: "Everyday Comfort",
-      image:
-        "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=85",
-      link: "/category/tshirts",
-      icon: <FiShoppingBag />,
-    },
-
-    {
-      id: 2,
-      name: "Shirts",
-      subtitle: "Classic & Modern",
-      image:
-        "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=900&q=85",
-      link: "/category/shirts",
-      icon: <FiShoppingBag />,
-    },
-
-    {
-      id: 3,
-      name: "Jerseys",
-      subtitle: "For Every Game",
-      image:
-        "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=900&q=85",
-      link: "/category/jerseys",
-      icon: <FiStar />,
-    },
-
-    {
-      id: 4,
-      name: "Pants",
-      subtitle: "Style Meets Comfort",
-      image:
-        "https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=900&q=85",
-      link: "/category/pants",
-      icon: <FiShoppingBag />,
-    },
-
-    {
-      id: 5,
-      name: "New Arrivals",
-      subtitle: "Fresh From The Rack",
-      image:
-        "https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=900&q=85",
-      link: "/category/new-arrivals",
-      icon: <FiStar />,
-      badge: "NEW",
-    },
-
-    {
-      id: 6,
-      name: "Best Sellers",
-      subtitle: "Customer Favorites",
-      image:
-        "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=900&q=85",
-      link: "/category/best-sellers",
-      icon: <FiStar />,
-      badge: "POPULAR",
-    },
-  ];
+  // Latest 6 Products
+  const latestProducts = [...products].reverse().slice(0, 6);
 
   return (
-    <section className="bg-[#FFF9F5] py-16 sm:py-20 lg:py-24">
+    <section className="bg-[#FFF9F5] py-14 sm:py-18 lg:py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
-        {/* Section Header */}
-        <div className="mb-10 text-center sm:mb-12">
+        {/* ================= HEADER ================= */}
+        <div className="mb-8 text-center sm:mb-10">
 
           <div className="mb-3 flex items-center justify-center gap-3">
-            <span className="h-[2px] w-8 bg-[#EE627D]" />
+            <span className="h-[2px] w-7 bg-[#BE2229]" />
 
-            <span className="text-xs font-bold uppercase tracking-[0.25em] text-[#BE2229]">
+            <span className="text-[9px] font-bold uppercase tracking-[0.3em] text-[#BE2229] sm:text-[10px]">
               Explore Collection
             </span>
 
-            <span className="h-[2px] w-8 bg-[#EE627D]" />
+            <span className="h-[2px] w-7 bg-[#BE2229]" />
           </div>
 
-          <h2 className="text-3xl font-extrabold tracking-tight text-[#171717] sm:text-4xl lg:text-5xl">
-            Shop By{" "}
-            <span className="text-[#BE2229]">
-              Category
+          <h2 className="text-3xl font-semibold leading-tight tracking-tight text-[#1D1D1D] sm:text-4xl lg:text-5xl">
+            Our Latest{" "}
+            <span className="font-serif italic text-[#BE2229]">
+              Products.
             </span>
           </h2>
 
-          <p className="mx-auto mt-4 max-w-2xl text-sm leading-7 text-gray-500 sm:text-base">
-            Find your perfect style from our carefully selected
-            collection of quality clothing made for every occasion.
+          <p className="mx-auto mt-3 max-w-xl text-xs leading-6 text-gray-500 sm:text-sm">
+            Discover our latest collection of carefully selected
+            products, made to bring style, comfort and quality to
+            your everyday wardrobe.
           </p>
+
         </div>
 
-        {/* Category Grid */}
-        <div className="grid grid-cols-2 gap-3 sm:gap-5 lg:grid-cols-3">
+        {/* ================= PRODUCTS ================= */}
+        <div className="grid grid-cols-2 gap-x-3 gap-y-8 sm:gap-x-5 sm:gap-y-10 lg:grid-cols-3 lg:gap-x-6 lg:gap-y-12">
 
-          {categories.map((category) => (
-            <a
-              key={category.id}
-              href={category.link}
-              className="group relative block overflow-hidden rounded-2xl
-              bg-gray-200 shadow-sm transition-all duration-500
-              hover:-translate-y-1 hover:shadow-xl sm:rounded-3xl"
-            >
+          {latestProducts.map((product) => {
 
-              <div className="relative aspect-[4/5] overflow-hidden sm:aspect-[4/4.7]">
+            // ================= AUTO DISCOUNT =================
+            const hasDiscount =
+              product.oldPrice &&
+              product.price &&
+              product.oldPrice > product.price;
 
-                <img
-                  src={category.image}
-                  alt={category.name}
-                  loading="lazy"
-                  className="h-full w-full object-cover
-                  transition duration-700
-                  group-hover:scale-110"
-                />
+            const discount = hasDiscount
+              ? Math.round(
+                  ((product.oldPrice - product.price) /
+                    product.oldPrice) *
+                    100
+                )
+              : null;
 
-                {/* Gradient */}
-                <div
-                  className="absolute inset-0 bg-gradient-to-t
-                  from-black/80 via-black/20 to-transparent"
-                />
+            return (
+              <article
+                key={product.id}
+                className="group"
+              >
 
-                {/* Badge */}
-                {category.badge && (
-                  <div
-                    className="absolute left-3 top-3 rounded-full
-                    bg-[#BE2229] px-3 py-1.5 text-[9px]
-                    font-bold tracking-wider text-white shadow-lg
-                    sm:left-5 sm:top-5 sm:px-4 sm:py-2 sm:text-[10px]"
+                {/* ================= IMAGE ================= */}
+                <div className="relative overflow-hidden rounded-[3px] bg-[#E8DED7]">
+
+                  <Link
+                    to={`/product/${product.id}`}
+                    className="block"
                   >
-                    {category.badge}
-                  </div>
-                )}
-
-                {/* Arrow */}
-                <div
-                  className="absolute right-3 top-3 flex h-9 w-9
-                  items-center justify-center rounded-full
-                  bg-white/90 text-[#BE2229]
-                  transition duration-500
-                  group-hover:rotate-45
-                  sm:right-5 sm:top-5 sm:h-11 sm:w-11"
-                >
-                  <FiArrowUpRight size={19} />
-                </div>
-
-                {/* Content */}
-                <div
-                  className="absolute inset-x-0 bottom-0 p-4
-                  sm:p-6 lg:p-7"
-                >
-
-                  <div
-                    className="mb-2 flex h-8 w-8 items-center
-                    justify-center rounded-full bg-[#EE627D]
-                    text-white sm:h-9 sm:w-9"
-                  >
-                    {category.icon}
-                  </div>
-
-                  <h3
-                    className="text-xl font-extrabold text-white
-                    sm:text-2xl lg:text-3xl"
-                  >
-                    {category.name}
-                  </h3>
-
-                  <p
-                    className="mt-1 text-[10px] font-medium
-                    uppercase tracking-wider text-white/75 sm:text-xs"
-                  >
-                    {category.subtitle}
-                  </p>
-
-                  <div
-                    className="mt-3 flex items-center gap-2
-                    text-xs font-bold text-white sm:mt-4 sm:text-sm"
-                  >
-                    <span>Shop Now</span>
-
-                    <span
-                      className="h-px w-6 bg-[#EE627D]
-                      transition-all duration-300
-                      group-hover:w-10"
+                    <img
+                      src={product.image}
+                      alt={product.name}
+                      loading="lazy"
+                      className="aspect-[4/4.5] w-full object-cover
+                      transition duration-700 ease-out
+                      group-hover:scale-105"
                     />
-                  </div>
+                  </Link>
+
+                  {/* ================= SALE BADGE ================= */}
+                  {hasDiscount && discount > 0 && (
+                    <span
+                      className="absolute left-2.5 top-2.5 flex items-center
+                      gap-1 rounded-full bg-[#BE2229] px-2.5 py-1
+                      text-[8px] font-bold uppercase tracking-wider
+                      text-white shadow-md sm:left-3 sm:top-3 sm:px-3
+                      sm:py-1.5 sm:text-[9px]"
+                    >
+                      <FiTag size={9} />
+
+                      {discount}% OFF
+                    </span>
+                  )}
+
+                  {/* ================= REGULAR BADGE ================= */}
+                  {!hasDiscount && (
+                    <span
+                      className="absolute left-2.5 top-2.5 rounded-full
+                      border border-white/80 bg-white/90 px-2.5 py-1
+                      text-[8px] font-bold uppercase tracking-wider
+                      text-gray-600 shadow-sm backdrop-blur-sm
+                      sm:left-3 sm:top-3 sm:px-3 sm:py-1.5 sm:text-[9px]"
+                    >
+                      Regular Price
+                    </span>
+                  )}
+
+                  {/* ================= WISHLIST ================= */}
+                  <button
+                    type="button"
+                    aria-label={`Add ${product.name} to wishlist`}
+                    className="absolute right-2.5 top-2.5 flex h-8 w-8
+                    translate-y-[-4px] items-center justify-center
+                    rounded-full bg-white text-[#222] opacity-0
+                    shadow-lg transition-all duration-300
+                    hover:bg-[#BE2229] hover:text-white
+                    group-hover:translate-y-0 group-hover:opacity-100
+                    sm:right-3 sm:top-3 sm:h-9 sm:w-9"
+                  >
+                    <FiHeart size={14} />
+                  </button>
+
+                  {/* ================= QUICK VIEW ================= */}
+                  <Link
+                    to={`/product/${product.id}`}
+                    className="absolute bottom-2.5 left-1/2 flex w-[82%]
+                    -translate-x-1/2 translate-y-4 items-center
+                    justify-center gap-1.5 rounded-full bg-white/95
+                    py-2 text-[8px] font-bold uppercase
+                    tracking-[0.15em] text-[#222] opacity-0 shadow-lg
+                    backdrop-blur-sm transition-all duration-300
+                    hover:bg-[#BE2229] hover:text-white
+                    group-hover:translate-y-0 group-hover:opacity-100
+                    sm:bottom-3 sm:py-2.5 sm:text-[9px]"
+                  >
+                    <FiShoppingBag size={12} />
+
+                    Quick View
+                  </Link>
 
                 </div>
-              </div>
-            </a>
-          ))}
+
+                {/* ================= PRODUCT INFO ================= */}
+                <div className="px-0.5 pt-3 sm:pt-4">
+
+                  {/* CATEGORY + RATING */}
+                  <div className="mb-1.5 flex items-center justify-between">
+
+                    <p
+                      className="text-[7px] font-bold uppercase
+                      tracking-[0.18em] text-gray-400 sm:text-[8px]"
+                    >
+                      {product.category}
+                    </p>
+
+                    <div className="flex items-center gap-0.5 text-[#BE2229]">
+
+                      <FiStar
+                        size={9}
+                        className="fill-current"
+                      />
+
+                      <span className="text-[8px] font-semibold text-gray-400">
+                        4.8
+                      </span>
+
+                    </div>
+
+                  </div>
+
+                  {/* PRODUCT NAME */}
+                  <Link
+                    to={`/product/${product.id}`}
+                    className="block truncate text-xs font-semibold
+                    text-[#222] transition-colors duration-200
+                    hover:text-[#BE2229] sm:text-sm"
+                  >
+                    {product.name}
+                  </Link>
+
+                  {/* ================= PRICE ================= */}
+                  <div className="mt-1.5 flex items-center gap-1.5">
+
+                    <span className="text-sm font-bold text-[#BE2229] sm:text-base">
+                      ৳{product.price}
+                    </span>
+
+                    {hasDiscount && (
+                      <span className="text-[9px] text-gray-400 line-through sm:text-[10px]">
+                        ৳{product.oldPrice}
+                      </span>
+                    )}
+
+                  </div>
+
+                  {/* ================= SAVING ================= */}
+                  {hasDiscount && (
+                    <p className="mt-0.5 text-[8px] font-medium text-green-600 sm:text-[9px]">
+                      Save ৳{product.oldPrice - product.price}
+                    </p>
+                  )}
+
+                </div>
+
+              </article>
+            );
+          })}
 
         </div>
 
-        {/* View All */}
+        {/* ================= SEE MORE PRODUCTS ================= */}
         <div className="mt-10 flex justify-center sm:mt-12">
 
-          <a
-            href="/shop"
-            className="group flex items-center gap-3 rounded-full
-            border-2 border-[#BE2229] px-7 py-3 text-sm font-bold
-            text-[#BE2229] transition-all duration-300
-            hover:bg-[#BE2229] hover:text-white
-            sm:px-9 sm:py-3.5"
+          <Link
+            to="/shop"
+            className="group inline-flex items-center gap-3
+            rounded-full border border-[#222] bg-transparent
+            px-6 py-3 text-[9px] font-bold uppercase
+            tracking-[0.15em] text-[#222]
+            transition-all duration-300
+            hover:border-[#BE2229] hover:bg-[#BE2229]
+            hover:text-white sm:px-7 sm:py-3.5 sm:text-[10px]"
           >
-            View All Products
+            See More Products
 
-            <FiArrowUpRight
-              size={18}
-              className="transition-transform duration-300
-              group-hover:rotate-45"
-            />
-          </a>
+            <span
+              className="flex h-6 w-6 items-center justify-center
+              rounded-full bg-[#222] text-white
+              transition-all duration-300
+              group-hover:bg-white group-hover:text-[#BE2229]"
+            >
+              <FiArrowUpRight
+                size={13}
+                className="transition-transform duration-300
+                group-hover:translate-x-0.5
+                group-hover:-translate-y-0.5"
+              />
+            </span>
+
+          </Link>
 
         </div>
 

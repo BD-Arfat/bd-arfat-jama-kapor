@@ -1,4 +1,5 @@
-import { useState } from "react";
+
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import {
   FiArrowUpRight,
@@ -6,6 +7,8 @@ import {
   FiShoppingBag,
   FiStar,
   FiTag,
+  FiChevronLeft,
+  FiChevronRight,
 } from "react-icons/fi";
 
 import products from "../../../../src/data/products";
@@ -13,6 +16,11 @@ import products from "../../../../src/data/products";
 const Shop = () => {
   const [activeCategory, setActiveCategory] = useState("All Products");
   const [activeFilter, setActiveFilter] = useState("All");
+
+  // ================= PAGINATION =================
+  const [currentPage, setCurrentPage] = useState(1);
+
+  const productsPerPage = 12;
 
   const categories = [
     "All Products",
@@ -23,8 +31,6 @@ const Shop = () => {
   ];
 
   // ================= NEWEST PRODUCT FIRST =================
-  // products.js এ সবার শেষে যে product add করবেন,
-  // সেটাই এখানে প্রথমে দেখাবে।
   const latestProducts = [...products].reverse();
 
   // ================= CATEGORY FILTER =================
@@ -54,6 +60,29 @@ const Shop = () => {
 
     return true;
   });
+
+  // ================= TOTAL PAGES =================
+  const totalPages = Math.ceil(
+    filteredProducts.length / productsPerPage
+  );
+
+  // ================= CURRENT PAGE PRODUCTS =================
+  const startIndex =
+    (currentPage - 1) * productsPerPage;
+
+  const endIndex =
+    startIndex + productsPerPage;
+
+  const currentProducts = filteredProducts.slice(
+    startIndex,
+    endIndex
+  );
+
+  // ================= RESET PAGE =================
+  // Category বা Filter পরিবর্তন হলে Page 1 এ যাবে
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [activeCategory, activeFilter]);
 
   return (
     <section className="bg-[#FAF7F4] py-20 sm:py-24 lg:py-28">
@@ -171,11 +200,11 @@ const Shop = () => {
         </div>
 
         {/* ================= PRODUCTS ================= */}
-        {filteredProducts.length > 0 ? (
+        {currentProducts.length > 0 ? (
 
           <div className="grid grid-cols-2 gap-x-4 gap-y-12 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-4 lg:gap-x-8 lg:gap-y-14">
 
-            {filteredProducts.map((product) => {
+            {currentProducts.map((product) => {
 
               // ================= AUTO DISCOUNT =================
               const hasDiscount =
@@ -250,7 +279,6 @@ const Shop = () => {
                   {/* ================= INFO ================= */}
                   <div className="px-1 pt-5">
 
-                    {/* CATEGORY + RATING */}
                     <div className="mb-2 flex items-center justify-between">
 
                       <p className="text-[9px] font-bold uppercase tracking-[0.2em] text-gray-400">
@@ -278,15 +306,13 @@ const Shop = () => {
                       {product.name}
                     </Link>
 
-                    {/* ================= PRICE ================= */}
+                    {/* PRICE */}
                     <div className="mt-2 flex items-center gap-2">
 
-                      {/* CURRENT PRICE */}
                       <span className="text-base font-bold text-[#BE2229]">
                         ৳{product.price}
                       </span>
 
-                      {/* OLD PRICE ONLY IF DISCOUNT */}
                       {hasDiscount && (
                         <span className="text-xs text-gray-400 line-through">
                           ৳{product.oldPrice}
@@ -295,7 +321,7 @@ const Shop = () => {
 
                     </div>
 
-                    {/* ================= SAVING TEXT ================= */}
+                    {/* SAVING */}
                     {hasDiscount && (
                       <p className="mt-1 text-[10px] font-medium text-green-600">
                         Save ৳{product.oldPrice - product.price}
@@ -330,6 +356,7 @@ const Shop = () => {
                 onClick={() => {
                   setActiveFilter("All");
                   setActiveCategory("All Products");
+                  setCurrentPage(1);
                 }}
                 className="mt-5 rounded-full bg-[#BE2229] px-5 py-2.5 text-xs font-bold text-white transition hover:bg-[#a91e24]"
               >
@@ -341,8 +368,79 @@ const Shop = () => {
           </div>
         )}
 
+        {/* ================= PAGINATION ================= */}
+        {totalPages > 1 && (
+          <div className="mt-16 flex flex-wrap items-center justify-center gap-2 sm:mt-20">
+
+            {/* PREVIOUS */}
+            <button
+              type="button"
+              disabled={currentPage === 1}
+              onClick={() =>
+                setCurrentPage((prev) => prev - 1)
+              }
+              className={`flex h-10 w-10 items-center justify-center rounded-full border transition-all duration-300 ${
+                currentPage === 1
+                  ? "cursor-not-allowed border-gray-200 text-gray-300"
+                  : "border-[#DED8D4] bg-white text-[#222] hover:border-[#BE2229] hover:bg-[#BE2229] hover:text-white"
+              }`}
+            >
+              <FiChevronLeft size={17} />
+            </button>
+
+            {/* PAGE NUMBERS */}
+            {Array.from(
+              { length: totalPages },
+              (_, index) => index + 1
+            ).map((page) => (
+              <button
+                key={page}
+                type="button"
+                onClick={() => setCurrentPage(page)}
+                className={`flex h-10 min-w-10 items-center justify-center rounded-full px-3 text-xs font-bold transition-all duration-300 ${
+                  currentPage === page
+                    ? "bg-[#BE2229] text-white shadow-md shadow-red-900/10"
+                    : "border border-[#DED8D4] bg-white text-gray-600 hover:border-[#BE2229] hover:text-[#BE2229]"
+                }`}
+              >
+                {page}
+              </button>
+            ))}
+
+            {/* NEXT */}
+            <button
+              type="button"
+              disabled={currentPage === totalPages}
+              onClick={() =>
+                setCurrentPage((prev) => prev + 1)
+              }
+              className={`flex h-10 w-10 items-center justify-center rounded-full border transition-all duration-300 ${
+                currentPage === totalPages
+                  ? "cursor-not-allowed border-gray-200 text-gray-300"
+                  : "border-[#DED8D4] bg-white text-[#222] hover:border-[#BE2229] hover:bg-[#BE2229] hover:text-white"
+              }`}
+            >
+              <FiChevronRight size={17} />
+            </button>
+
+          </div>
+        )}
+
+        {/* ================= PAGE INFO ================= */}
+        {filteredProducts.length > 0 && (
+          <p className="mt-4 text-center text-[10px] font-medium uppercase tracking-wider text-gray-400">
+            Showing{" "}
+            {startIndex + 1}–
+            {Math.min(
+              endIndex,
+              filteredProducts.length
+            )}{" "}
+            of {filteredProducts.length} products
+          </p>
+        )}
+
         {/* ================= CTA ================= */}
-        <div className="mt-16 flex justify-center sm:mt-20">
+        <div className="mt-10 flex justify-center sm:mt-12">
 
           <Link
             to="/shop"

@@ -603,6 +603,86 @@ const products = [
 
     sku: "BDT-004",
   },
+
+  // PRODUCT 15
+  // =====================================================
+   {
+    id: 15,
+    name: "AC Milan 2007 UEFA Champions League Final Retro Fan Edition Jersey",
+    category: "jersey",
+
+    price: 450,
+    oldPrice: 600,
+
+    rating: 4.8,
+    reviews: 87,
+    stock: 30,
+
+    image:
+      "https://i.ibb.co.com/zhFsCKmZ/Whats-App-Image-2026-10-02-at-9-24-15-PM.jpg",
+
+    images: [
+      "https://i.ibb.co.com/zhFsCKmZ/Whats-App-Image-2026-10-02-at-9-24-15-PM.jpg",
+      "https://i.ibb.co.com/zhFsCKmZ/Whats-App-Image-2026-10-02-at-9-24-15-PM.jpg",
+      "https://i.ibb.co.com/zhFsCKmZ/Whats-App-Image-2026-10-02-at-9-24-15-PM.jpg",
+      "https://i.ibb.co.com/zhFsCKmZ/Whats-App-Image-2026-10-02-at-9-24-15-PM.jpg",
+    ],
+
+    description:
+      "Relive the unforgettable glory of the 2007 Athens Champions League Final with this iconic AC Milan Retro Fan Edition Jersey! Designed with a sleek black base, teal and white shoulder accents, and the memorable UEFA Champions League Final match details, this piece is a must-have for every Milanista and football shirt collector.",
+
+    sizes: ["M", "L", "XL", "XXL"],
+
+    colors: ["Black", "White", "Beige"],
+
+    material: "Heavy Cotton",
+
+    fit: "Oversized Fit",
+
+    delivery: "2-5 working days",
+
+    sku: "BDT-004",
+  },
+
+  // PRODUCT 16
+  // =====================================================
+   {
+    id: 16,
+    name: "Liverpool Special Edition White & Green Fan Edition Jersey",
+    category: "jersey",
+
+    price: 400,
+    // oldPrice: 600,
+
+    rating: 4.8,
+    reviews: 87,
+    stock: 30,
+
+    image:
+      "https://i.ibb.co.com/GQ4VPMTy/Whats-App-Image-2026-10-02-at-9-24-31-PM.jpg",
+
+    images: [
+      "https://i.ibb.co.com/GQ4VPMTy/Whats-App-Image-2026-10-02-at-9-24-31-PM.jpg",
+      "https://i.ibb.co.com/GQ4VPMTy/Whats-App-Image-2026-10-02-at-9-24-31-PM.jpg",
+      "https://i.ibb.co.com/GQ4VPMTy/Whats-App-Image-2026-10-02-at-9-24-31-PM.jpg",
+      "https://i.ibb.co.com/GQ4VPMTy/Whats-App-Image-2026-10-02-at-9-24-31-PM.jpg",
+    ],
+
+    description:
+      "​Show your support for Liverpool FC with this stylish Liverpool Special Edition White & Green Fan Edition Jersey! Designed with a sleek white base, dark green panel accents, and classic shoulder stripes, this jersey perfectly combines football tradition with modern athletic style.",
+
+    sizes: ["M", "L", "XL", "XXL"],
+
+    colors: ["Black", "White", "Beige"],
+
+    material: "Heavy Cotton",
+
+    fit: "Oversized Fit",
+
+    delivery: "2-5 working days",
+
+    sku: "BDT-004",
+  },
 ];
 
 export default products;
