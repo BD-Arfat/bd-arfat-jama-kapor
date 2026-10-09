@@ -683,6 +683,125 @@ const products = [
 
     sku: "BDT-004",
   },
+
+  // PRODUCT 17
+  // =====================================================
+   {
+    id: 17,
+    name: "Barcelona Special Edition Fan Edition Jersey.",
+    category: "jersey",
+
+    price: 420,
+    // oldPrice: 600,
+
+    rating: 4.8,
+    reviews: 87,
+    stock: 30,
+
+    image:
+      "https://i.ibb.co.com/84zTgwt4/Whats-App-Image-2026-10-09-at-5-46-24-PM.jpg",
+
+    images: [
+      "https://i.ibb.co.com/84zTgwt4/Whats-App-Image-2026-10-09-at-5-46-24-PM.jpg",
+      "https://i.ibb.co.com/YBk3vqQY/Whats-App-Image-2026-10-09-at-5-46-23-PM.jpg",
+      "https://i.ibb.co.com/84zTgwt4/Whats-App-Image-2026-10-09-at-5-46-24-PM.jpg",
+      "https://i.ibb.co.com/YBk3vqQY/Whats-App-Image-2026-10-09-at-5-46-23-PM.jpg",
+    ],
+
+    description:
+      "Celebrate the passion of FC Barcelona with this vibrant Barcelona Special Edition Fan Edition Jersey! Featuring iconic blue and red stripes with unique accent details and bold sponsor branding, this jersey is perfect for match days, casual outings, or adding to your football collection.",
+
+    sizes: ["M", "L", "XL", "XXL"],
+
+    colors: ["Black", "White", "Beige"],
+
+    material: "Heavy Cotton",
+
+    fit: "Oversized Fit",
+
+    delivery: "2-5 working days",
+
+    sku: "BDT-004",
+  },
+  // PRODUCT 18
+  // =====================================================
+   {
+    id: 18,
+    name: "Liverpool Special Edition White & Green Fan Edition Jersey.",
+    category: "jersey",
+
+    price: 600,
+    // oldPrice: 600,
+
+    rating: 4.8,
+    reviews: 87,
+    stock: 30,
+
+    image:
+      "https://i.ibb.co.com/rXmtDJm/Whats-App-Image-2026-10-09-at-5-46-25-PM.jpg",
+
+    images: [
+      "https://i.ibb.co.com/B5qf2X2G/Whats-App-Image-2026-10-09-at-5-46-26-PM.jpg",
+      "https://i.ibb.co.com/r2nw1D7q/Whats-App-Image-2026-10-09-at-5-46-26-PM2.jpg",
+      "https://i.ibb.co.com/BK69wHY3/Whats-App-Image-2026-10-09-at-5-46-24-PM2.jpg",
+      "https://i.ibb.co.com/rXmtDJm/Whats-App-Image-2026-10-09-at-5-46-25-PM.jpg",
+    ],
+
+    description:
+      "Celebrate the passion of FC Barcelona with this vibrant Barcelona Special Edition Fan Edition Jersey! Featuring iconic blue and red stripes with unique accent details and bold sponsor branding, this jersey is perfect for match days, casual outings, or adding to your football collection.",
+
+    sizes: ["M", "L", "XL", "XXL"],
+
+    colors: ["Black", "White", "Beige"],
+
+    material: "Heavy Cotton",
+
+    fit: "Oversized Fit",
+
+    delivery: "2-5 working days",
+
+    sku: "BDT-004",
+  },
+
+  // PRODUCT 19
+  // =====================================================
+   {
+    id: 19,
+    name: "Liverpool Special Edition White & Green Fan Edition Jersey.",
+    category: "jersey",
+
+    price: 600,
+    // oldPrice: 600,
+
+    rating: 4.8,
+    reviews: 87,
+    stock: 30,
+
+    image:
+      "https://i.ibb.co.com/ZpGJRjC2/Whats-App-Image-2026-10-09-at-5-46-27-PM.jpg",
+
+    images: [
+      "https://i.ibb.co.com/qLq66fs2/2.jpg",
+      "https://i.ibb.co.com/gZMbP4SB/3.jpg",
+      "https://i.ibb.co.com/qLq66fs2/2.jpg",
+      "https://i.ibb.co.com/ZpGJRjC2/Whats-App-Image-2026-10-09-at-5-46-27-PM.jpg",
+    ],
+
+    description:
+      "Celebrate the passion of FC Barcelona with this vibrant Barcelona Special Edition Fan Edition Jersey! Featuring iconic blue and red stripes with unique accent details and bold sponsor branding, this jersey is perfect for match days, casual outings, or adding to your football collection.",
+
+    sizes: ["M", "L", "XL", "XXL"],
+
+    colors: ["Black", "White", "Beige"],
+
+    material: "Heavy Cotton",
+
+    fit: "Oversized Fit",
+
+    delivery: "2-5 working days",
+
+    sku: "BDT-004",
+  },
 ];
 
 export default products;
